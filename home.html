@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>Dice game</title>
+    <link rel="shortcut icon" href="icons/dice-six-faces-five.png" type="image/x-icon">
+</head>
+<body>
+    <div class="cadre" id="page" >
+        <p class="alert" id="alert1"> Hard luck! you lost your round</p>
+        <p class="alert" id="alert_win"> Player 1 you won! Congratulations</p>
+        
+        <button class="new-game" id="new_game" > <span class="material-icons">
+            add_circle_outline
+            </span>  NEW GAME</button>
+        
+        <img class="dice dice-face-one" id="face_one" src="icons/dice-six-faces-one.png" alt="">
+        <img class="dice dice-face-two" id="face_two" src="icons/dice-six-faces-two.png" alt="">
+        <img class="dice dice-face-three" id="face_three" src="icons/dice-six-faces-three.png" alt="">
+        <img class="dice dice-face-four" id="face_four" src="icons/dice-six-faces-four.png" alt="">
+        <img class="dice dice-face-five"id="face_five" src="icons/dice-six-faces-five.png" alt="">
+        <img class="dice dice-face-six"id="face_six" src="icons/dice-six-faces-six.png" alt="">
+        
+        <button class="roll-btn" id="roll"> <span class="material-icons">
+            autorenew
+            </span>  Roll dice</button>
+        <button class="hold-btn" id="hold"> <span class="material-icons">
+            save_alt
+            </span>  HOLD</button>
+        
+        <div class="game left-player">
+            <p class="h1">Player 1 <span class="dot" id="dot1">.</span> </p>
+            <p class="last_score" id="total_score_1"> 0</p>
+            
+            <div class="score current_score_1">
+                Current
+                <h4 id="current-left">0</h4>
+            </div>
+        </div><!-- 
+        --><div class="right-player" id="rightplayer">
+            <p class="h2">Player 2 <span class="dot" id="dot2">.</span> </p>
+            <p class="last_score" id="total_score_2"> 0</p>
+            <div class="score current_score_2">
+                Current
+                <h4 id="current-right">0</h4>
+            </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
