@@ -207,7 +207,6 @@ function testWin(){
 }
 
 btn_roll.addEventListener('click',roll);
-btn_roll.addEventListener('touchstart', roll);
 btn_hold.addEventListener('click', calcul_total_score);
 new_game.addEventListener('click',restart );
 
