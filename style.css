@@ -19,8 +19,8 @@
 }
 .current_score_1{
     background: #e63636;
-    width: 14vw;
-    height: 12vw;
+    width: 16vw;
+    height: 15vw;
     padding: 10px;
     text-align: center;
     position: absolute;
@@ -30,8 +30,8 @@
 }
 .current_score_2{
     background: #e63636;
-    width: 12vw;
-    height: 13vw;
+    width: 16vw;
+    height: 15vw;
     padding: 10px;
     text-align: center;
     position: absolute;
