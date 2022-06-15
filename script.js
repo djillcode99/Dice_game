@@ -1,31 +1,31 @@
-let btn_roll = document.getElementById('roll')
-let btn_hold = document.getElementById('hold')
-let new_game = document.getElementById('new_game')
-let f1 = document.getElementById('face_one')
-let f2 = document.getElementById('face_two')
-let f3 = document.getElementById('face_three')
-let f4 = document.getElementById('face_four')
-let f5 = document.getElementById('face_five')
-let f6 = document.getElementById('face_six')
-let current_left = document.getElementById('current-left')
-let current_right = document.getElementById('current-right')
+const btn_roll = document.getElementById('roll')
+const btn_hold = document.getElementById('hold')
+const new_game = document.getElementById('new_game')
+const f1 = document.getElementById('face_one')
+const f2 = document.getElementById('face_two')
+const f3 = document.getElementById('face_three')
+const f4 = document.getElementById('face_four')
+const f5 = document.getElementById('face_five')
+const f6 = document.getElementById('face_six')
+const current_left = document.getElementById('current-left')
+const current_right = document.getElementById('current-right')
 let current_left_score = 0;
 let current_right_score = 0; 
-let total_left = document.getElementById('total_score_1')
-let total_right = document.getElementById('total_score_2')
+const total_left = document.getElementById('total_score_1')
+const total_right = document.getElementById('total_score_2')
 let total_score_1 = 0; 
 let total_score_2 = 0; 
-let game = document.getElementById('rightplayer'); 
+const game = document.getElementById('rightplayer'); 
 let player_round = 1; 
-let dot_left = document.getElementById('dot1');
-let dot_right = document.getElementById('dot2');
-let alert1 = document.getElementById('alert1'); 
-let alert2 = document.getElementById('alert_win');
+const dot_left = document.getElementById('dot1');
+const dot_right = document.getElementById('dot2');
+const alert1 = document.getElementById('alert1'); 
+const alert2 = document.getElementById('alert_win');
 
 
 
 
-function reset(){
+const reset = ()=>{
         f2.style.opacity=100; 
         f3.style.opacity=100; 
         f4.style.opacity=100; 
@@ -36,7 +36,7 @@ function reset(){
         btn_hold.removeAttribute('disabled'); 
         
 }
-function result(){
+const result = ()=>{
     let i = Math.floor(Math.random() * 6) + 1;
     console.log(i);
     switch(i){
@@ -129,7 +129,7 @@ function result(){
     
 
 }
-function roll(){
+const roll = ()=>{
     
     reset();
     f6.style.opacity =0;
@@ -157,7 +157,7 @@ function roll(){
     
 }
 
-function calcul_total_score(){
+const calcul_total_score = ()=>{
      
     if(player_round === 1){
         total_score_1 = total_score_1+ current_left_score; 
@@ -178,7 +178,7 @@ function calcul_total_score(){
     }
     testWin();
 }
-function restart(){
+const restart = ()=>{
     reset(); 
     player_round = 1; 
     dot_left.style.opacity = 100;
@@ -192,7 +192,7 @@ function restart(){
     total_left.textContent = 0;
     total_right.textContent = 0; 
 }
-function testWin(){
+const testWin = ()=>{
     if(total_score_1 >= 100){
         alert2.textContent = 'Player 1 you won! Congratulations!';
         alert2.style.opacity = 100;
